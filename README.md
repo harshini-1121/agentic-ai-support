@@ -1,64 +1,75 @@
 # Agentic AI Support System
 
-An **Agentic AI-based customer support system** designed for e-commerce platforms to automatically handle user queries such as order tracking, refunds, and FAQs using an orchestrator and specialized agents.
+An intelligent customer support system built using an Agentic AI architecture and LLM-based intent classification for e-commerce platforms.
 
 ---
 
-## Problem Statement
+## Problem
 
-E-commerce platforms receive **10,000+ customer queries daily**, leading to:
+E-commerce platforms handle high volumes of customer queries, which leads to:
 
-*  Long response times (~6 hours)
-*  Poor customer satisfaction
-*  Overloaded support teams
+* Slow response times
+* Poor customer satisfaction
+* Overloaded support teams
 
 ---
 
 ## Solution
 
-We built an **Agentic AI system** where:
+This project implements an AI-driven system that:
 
-* An **Orchestrator** classifies user queries
-* Routes them to specialized **agents**
-* Applies **guardrails** for safety
-* Logs all actions for **monitoring**
-* Provides a **simple chat UI** for interaction
+* Uses a large language model (Hugging Face) to classify user queries
+* Routes queries to specialized agents
+* Applies guardrails for safety
+* Logs system behavior for monitoring
+* Provides a simple chat-based user interface
 
 ---
 
-## System Architecture
+## Design Thinking Approach
+
+The system is designed using Design Thinking principles:
+
+* Empathize: Identify customer frustration and support overload
+* Define: Need for fast, scalable support
+* Ideate: Multi-agent AI system with LLM classification
+* Prototype: FastAPI backend with chat interface
+* Test: Validated through API calls and logs
+
+---
+
+## Architecture
 
 ```
-User Query
-   ↓
-Orchestrator (Intent Classification)
-   ↓
------------------------------------
-| Order | Refund | FAQ | Escalation |
------------------------------------
-   ↓
-Guardrails → Response → Logs
+User → Frontend UI → FastAPI Backend  
+     → Orchestrator  
+     → Hugging Face LLM (Zero-shot Classification)  
+     → Agent (Order / Refund / FAQ)  
+     → Guardrails  
+     → Response  
+     → Logs (system.log)
 ```
 
 ---
 
 ## Features
-*  Order Tracking Agent
-*  Refund Agent with Guardrails
-*  FAQ Agent
-*  Orchestrator (Intent Routing)
-*  Guardrails (Safety + Limits)
-*  Monitoring & Logging
-*  Frontend Chat UI
+
+* Order Tracking Agent
+* Refund Processing Agent
+* FAQ Agent
+* LLM-based Intent Classification
+* Guardrails for safety
+* Monitoring and logging
+* Chat-based frontend interface
 
 ---
 
 ## Tech Stack
 
-* **Backend:** FastAPI
-* **Frontend:** HTML, CSS, JavaScript
-* **Language:** Python
-* **Architecture:** Agentic AI System
+* Backend: FastAPI
+* LLM: Hugging Face (BART MNLI – zero-shot classification)
+* Frontend: HTML, CSS, JavaScript
+* Language: Python
 
 ---
 
@@ -105,15 +116,15 @@ cd agentic-ai-support
 python -m venv venv
 ```
 
-Activate it:
+Activate:
 
-**Windows:**
+Windows:
 
 ```bash
 venv\Scripts\activate
 ```
 
-**Mac/Linux:**
+Mac/Linux:
 
 ```bash
 source venv/bin/activate
@@ -129,32 +140,38 @@ pip install -r requirements.txt
 
 ---
 
-##  Running the Backend
+## Running the Backend
 
 ```bash
 uvicorn main:app --reload
 ```
 
-Open in browser:
-
- http://127.0.0.1:8000/docs
-
-Use the `/query` endpoint to test.
+Open:
+http://127.0.0.1:8000/docs
 
 ---
 
-##  Running the Frontend
+## Running the Frontend
 
-1. Go to the `frontend` folder
-2. Open `index.html` in your browser
+Open:
 
-Enter queries like:
-* "Where is my order?"
-* "I want refund"
+```
+frontend/index.html
+```
 
 ---
 
-##  Example API Request
+## Environment Variables
+
+Create a `.env` file:
+
+```
+HF_API_KEY=your_huggingface_token
+```
+
+---
+
+## Example API Request
 
 ```json
 {
@@ -164,25 +181,24 @@ Enter queries like:
 
 ---
 
-##  Guardrails Implemented
+## Guardrails
 
 * Refund limit enforcement
-* Sensitive data protection
-* Escalation for high-risk actions
-* Loop prevention
+* Safe response handling
+* Escalation for high-risk queries
 
 ---
 
 ## Monitoring
 
-System logs:
+The system logs:
 
-* Query received
-* Intent detected
-* Agent used
-* Guardrail triggers
+* User queries
+* Intent classification
+* Agent routing
+* Errors
 
-Logs stored in:
+Logs are stored in:
 
 ```
 system.log
@@ -190,32 +206,30 @@ system.log
 
 ---
 
-## LLM Design Note
-
-The system is designed to use **LLM-based classification**.
-Due to API quota limitations, a **semantic fallback classifier** is used to ensure:
-
-* Reliability
-* Zero downtime
-* Consistent performance
-
----
-
-##  Key Concepts
+## Key Concepts
 
 * Agentic AI
-* Orchestrator Pattern
+* Orchestrator pattern
+* LLM integration
 * Guardrails
-* Monitoring & Observability
+* Observability
 
 ---
 
-##  Future Improvements
+## Future Improvements
 
-* Integrate real LLM (Grok / GPT / Gemini)
-* Add vector database for FAQ
-* Improve UI/UX
-* Add authentication
+* Database integration
+* Improved UI/UX
+* Authentication system
+* Multi-language support
+
+---
+
+## References
+
+* https://fastapi.tiangolo.com/
+* https://huggingface.co/
+* https://docs.python.org/
 
 ---
 
@@ -227,4 +241,4 @@ Harshini T N
 
 ## Conclusion
 
-This project demonstrates a **scalable and reliable Agentic AI system** capable of improving customer support efficiency while ensuring safety and robustness.
+This project demonstrates a scalable AI-driven support system using LLM-based classification and agent-based architecture to improve customer support efficiency.
