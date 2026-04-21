@@ -1,0 +1,6 @@
+2026-04-21 15:27:46,918 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:27:52,555 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:27:52,558 - INFO - Query: I want refund
+2026-04-21 15:27:52,559 - INFO - Detected intent: refund
+2026-04-21 15:27:52,607 - INFO - Routed to Refund Agent
+2026-04-21 15:27:52,608 - INFO - Guardrail triggered: refund limit exceeded
