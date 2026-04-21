@@ -6,6 +6,6 @@ def handle_refund(query):
 
     if not check_refund_limit(amount):
         log_event("Guardrail triggered: refund limit exceeded")
-        return "⚠️ Refund exceeds limit. Escalating to human agent."
+        return " Refund exceeds limit. Escalating to human agent."
 
-    return "💰 Refund processed successfully."
+    return " Refund processed successfully."

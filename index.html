@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agentic AI Chat</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #0f172a;
+            color: white;
+            text-align: center;
+        }
+
+        .chat-box {
+            width: 400px;
+            margin: auto;
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 70%;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background: #38bdf8;
+            border: none;
+            cursor: pointer;
+        }
+
+        .msg {
+            text-align: left;
+            margin: 10px;
+        }
+
+        .user {
+            color: #38bdf8;
+        }
+
+        .bot {
+            color: #22c55e;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>🤖 Agentic AI Support</h2>
+
+<div class="chat-box">
+    <div id="chat"></div>
+
+    <input id="query" placeholder="Ask something..." />
+    <button onclick="sendQuery()">Send</button>
+</div>
+
+<script>
+async function sendQuery() {
+    let query = document.getElementById("query").value;
+
+    // show user message
+    let chat = document.getElementById("chat");
+    chat.innerHTML += `<div class='msg user'>👤 ${query}</div>`;
+
+    try {
+        const res = await fetch("http://127.0.0.1:8000/query", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                user_query: query   // ✅ IMPORTANT FIX
+            })
+        });
+
+        const data = await res.json();
+
+        // show bot response
+        chat.innerHTML += `<div class='msg bot'>🤖 ${data.response}</div>`;
+
+    } catch (error) {
+        chat.innerHTML += `<div class='msg bot'>❌ Error connecting to server</div>`;
+        console.error(error);
+    }
+}
+</script>
+
+</body>
+</html>

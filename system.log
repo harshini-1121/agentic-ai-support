@@ -4,3 +4,223 @@
 2026-04-21 15:27:52,559 - INFO - Detected intent: refund
 2026-04-21 15:27:52,607 - INFO - Routed to Refund Agent
 2026-04-21 15:27:52,608 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:30:59,596 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:31:04,760 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:31:04,764 - INFO - Query: Where is my order?
+2026-04-21 15:31:04,764 - INFO - Detected intent: order
+2026-04-21 15:31:04,766 - INFO - Routed to Order Agent
+2026-04-21 15:36:21,247 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:36:24,376 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:36:31,404 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:36:31,615 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:36:31,784 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:36:31,976 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:36:32,841 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:36:32,844 - INFO - Query: i want refund
+2026-04-21 15:36:32,844 - INFO - Detected intent: refund
+2026-04-21 15:36:32,916 - INFO - Routed to Refund Agent
+2026-04-21 15:36:32,916 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:36:32,920 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:36:34,408 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:36:34,442 - INFO - Query: i want refund
+2026-04-21 15:36:34,442 - INFO - Detected intent: refund
+2026-04-21 15:36:34,442 - INFO - Routed to Refund Agent
+2026-04-21 15:36:34,443 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:36:34,447 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:36:38,515 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:36:38,517 - INFO - Query: i want refund
+2026-04-21 15:36:38,518 - INFO - Detected intent: refund
+2026-04-21 15:36:38,518 - INFO - Routed to Refund Agent
+2026-04-21 15:36:38,518 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:36:38,521 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:36:38,721 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:36:38,722 - INFO - Query: i want refund
+2026-04-21 15:36:38,722 - INFO - Detected intent: refund
+2026-04-21 15:36:38,722 - INFO - Routed to Refund Agent
+2026-04-21 15:36:38,722 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:36:38,725 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:36:39,750 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:36:39,752 - INFO - Query: i want refund
+2026-04-21 15:36:39,752 - INFO - Detected intent: refund
+2026-04-21 15:36:39,752 - INFO - Routed to Refund Agent
+2026-04-21 15:36:39,752 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:36:40,626 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:36:40,627 - INFO - Query: i want refund
+2026-04-21 15:36:40,627 - INFO - Detected intent: refund
+2026-04-21 15:36:40,628 - INFO - Routed to Refund Agent
+2026-04-21 15:36:40,628 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:36:42,600 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:36:42,603 - INFO - Query: i want refund
+2026-04-21 15:36:42,603 - INFO - Detected intent: refund
+2026-04-21 15:36:42,603 - INFO - Routed to Refund Agent
+2026-04-21 15:36:42,603 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:36:43,550 - INFO - Query: i want refund
+2026-04-21 15:36:43,550 - INFO - Detected intent: refund
+2026-04-21 15:36:43,551 - INFO - Routed to Refund Agent
+2026-04-21 15:36:43,551 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:36:44,039 - INFO - Query: i want refund
+2026-04-21 15:36:44,039 - INFO - Detected intent: refund
+2026-04-21 15:36:44,039 - INFO - Routed to Refund Agent
+2026-04-21 15:36:44,039 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:36:44,590 - INFO - Query: i want refund
+2026-04-21 15:36:44,591 - INFO - Detected intent: refund
+2026-04-21 15:36:44,591 - INFO - Routed to Refund Agent
+2026-04-21 15:36:44,591 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:43:37,625 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:43:38,031 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:43:38,993 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:43:39,154 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:43:39,343 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:43:39,520 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:43:40,260 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:43:40,262 - INFO - Query: i want refund
+2026-04-21 15:43:40,263 - INFO - Detected intent: refund
+2026-04-21 15:43:40,270 - INFO - Routed to Refund Agent
+2026-04-21 15:43:40,271 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:43:40,275 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:43:40,321 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:43:40,325 - INFO - Query: i want refund
+2026-04-21 15:43:40,325 - INFO - Detected intent: refund
+2026-04-21 15:43:40,325 - INFO - Routed to Refund Agent
+2026-04-21 15:43:40,325 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:43:40,331 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:43:40,387 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:43:40,390 - INFO - Query: i want refund
+2026-04-21 15:43:40,390 - INFO - Detected intent: refund
+2026-04-21 15:43:40,390 - INFO - Routed to Refund Agent
+2026-04-21 15:43:40,390 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:43:40,395 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:43:40,451 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:43:40,453 - INFO - Query: i want refund
+2026-04-21 15:43:40,454 - INFO - Detected intent: refund
+2026-04-21 15:43:40,455 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:43:40,455 - INFO - Routed to Refund Agent
+2026-04-21 15:43:40,455 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:43:40,457 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:43:40,458 - INFO - Query: i want refund
+2026-04-21 15:43:40,461 - INFO - Detected intent: refund
+2026-04-21 15:43:40,463 - INFO - Query: i want refund
+2026-04-21 15:43:40,463 - INFO - Routed to Refund Agent
+2026-04-21 15:43:40,464 - INFO - Detected intent: refund
+2026-04-21 15:43:40,464 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:43:40,464 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:43:40,465 - INFO - Routed to Refund Agent
+2026-04-21 15:43:40,469 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:43:40,479 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:43:40,483 - INFO - Query: i want refund
+2026-04-21 15:43:40,484 - INFO - Detected intent: refund
+2026-04-21 15:43:40,484 - INFO - Routed to Refund Agent
+2026-04-21 15:43:40,484 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:43:40,485 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:43:40,492 - INFO - Query: i want refund
+2026-04-21 15:43:40,492 - INFO - Detected intent: refund
+2026-04-21 15:43:40,492 - INFO - Routed to Refund Agent
+2026-04-21 15:43:40,493 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:43:40,500 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:43:40,558 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:43:40,559 - INFO - Query: i want refund
+2026-04-21 15:43:40,559 - INFO - Detected intent: refund
+2026-04-21 15:43:40,560 - INFO - Routed to Refund Agent
+2026-04-21 15:43:40,560 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:43:40,605 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:43:40,611 - INFO - Query: i want refund
+2026-04-21 15:43:40,611 - INFO - Detected intent: refund
+2026-04-21 15:43:40,611 - INFO - Routed to Refund Agent
+2026-04-21 15:43:40,611 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:43:40,643 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:43:40,649 - INFO - Query: i want refund
+2026-04-21 15:43:40,649 - INFO - Detected intent: refund
+2026-04-21 15:43:40,649 - INFO - Routed to Refund Agent
+2026-04-21 15:43:40,649 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:43:40,720 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:43:40,896 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:43:40,902 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:43:40,904 - INFO - Query: i want refund
+2026-04-21 15:43:40,905 - INFO - Detected intent: refund
+2026-04-21 15:43:40,906 - INFO - Routed to Refund Agent
+2026-04-21 15:43:40,906 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:43:41,050 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:43:41,055 - INFO - Query: i want refund
+2026-04-21 15:43:41,056 - INFO - Detected intent: refund
+2026-04-21 15:43:41,056 - INFO - Routed to Refund Agent
+2026-04-21 15:43:41,056 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:43:41,075 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:43:41,224 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:43:41,228 - INFO - Query: i want refund
+2026-04-21 15:43:41,229 - INFO - Detected intent: refund
+2026-04-21 15:43:41,229 - INFO - Routed to Refund Agent
+2026-04-21 15:43:41,229 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:43:41,241 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:43:41,409 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:43:41,415 - INFO - Query: i want refund
+2026-04-21 15:43:41,415 - INFO - Detected intent: refund
+2026-04-21 15:43:41,416 - INFO - Routed to Refund Agent
+2026-04-21 15:43:41,416 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:43:41,423 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:43:41,601 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:43:41,602 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:43:41,608 - INFO - Query: i want refund
+2026-04-21 15:43:41,608 - INFO - Detected intent: refund
+2026-04-21 15:43:41,609 - INFO - Routed to Refund Agent
+2026-04-21 15:43:41,609 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:43:41,755 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:43:41,760 - INFO - Query: i want refund
+2026-04-21 15:43:41,761 - INFO - Detected intent: refund
+2026-04-21 15:43:41,761 - INFO - Routed to Refund Agent
+2026-04-21 15:43:41,761 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:43:41,792 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:43:41,934 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:43:41,940 - INFO - Query: i want refund
+2026-04-21 15:43:41,940 - INFO - Detected intent: refund
+2026-04-21 15:43:41,941 - INFO - Routed to Refund Agent
+2026-04-21 15:43:41,941 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:43:41,968 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:43:42,100 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:43:42,105 - INFO - Query: i want refund
+2026-04-21 15:43:42,105 - INFO - Detected intent: refund
+2026-04-21 15:43:42,105 - INFO - Routed to Refund Agent
+2026-04-21 15:43:42,106 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:43:42,175 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:43:42,315 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:43:42,321 - INFO - Query: i want refund
+2026-04-21 15:43:42,322 - INFO - Detected intent: refund
+2026-04-21 15:43:42,322 - INFO - Routed to Refund Agent
+2026-04-21 15:43:42,322 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:43:42,401 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:43:42,535 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:43:42,537 - INFO - Query: i want refund
+2026-04-21 15:43:42,538 - INFO - Detected intent: refund
+2026-04-21 15:43:42,538 - INFO - Routed to Refund Agent
+2026-04-21 15:43:42,538 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:47:31,463 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:47:32,133 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:47:32,136 - INFO - Query: string
+2026-04-21 15:47:32,136 - INFO - Detected intent: faq
+2026-04-21 15:47:32,169 - INFO - Routed to FAQ Agent
+2026-04-21 15:47:36,868 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:47:38,502 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:47:38,504 - INFO - Query: string
+2026-04-21 15:47:38,504 - INFO - Detected intent: faq
+2026-04-21 15:47:38,505 - INFO - Routed to FAQ Agent
+2026-04-21 15:48:38,445 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:48:38,764 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:48:38,765 - INFO - Query: I want refund
+2026-04-21 15:48:38,765 - INFO - Detected intent: refund
+2026-04-21 15:48:38,769 - INFO - Routed to Refund Agent
+2026-04-21 15:48:38,769 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:51:34,659 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:51:35,748 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:51:35,752 - INFO - Query: where is my order?
+2026-04-21 15:51:35,752 - INFO - Detected intent: order
+2026-04-21 15:51:35,757 - INFO - Routed to Order Agent
+2026-04-21 15:52:22,884 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:52:23,285 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:52:23,291 - INFO - Query: i want refund
+2026-04-21 15:52:23,291 - INFO - Detected intent: refund
+2026-04-21 15:52:23,295 - INFO - Routed to Refund Agent
+2026-04-21 15:52:23,295 - INFO - Guardrail triggered: refund limit exceeded
+2026-04-21 15:52:38,163 - INFO - AFC is enabled with max remote calls: 10.
+2026-04-21 15:52:38,414 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-21 15:52:38,419 - INFO - Query: where is my order?
+2026-04-21 15:52:38,420 - INFO - Detected intent: order
+2026-04-21 15:52:38,420 - INFO - Routed to Order Agent

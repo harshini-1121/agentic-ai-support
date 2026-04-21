@@ -1,39 +1,39 @@
 import os
 from dotenv import load_dotenv
-from google import genai
+from openai import OpenAI
 
 load_dotenv()
 
-client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
-
+client = OpenAI(
+    api_key=os.getenv("GROK_API_KEY"),
+    base_url="https://api.x.ai/v1"
+)
 
 def classify_query_llm(query: str):
-    try:
-        prompt = f"""
-        Classify the query into one of:
-        - order
-        - refund
-        - faq
+    """
+    Simulates LLM-based intent classification using semantic patterns.
+    Acts as a fallback when real LLM APIs are unavailable.
+    """
 
-        Return only one word.
+    q = query.lower()
 
-        Query: {query}
-        """
+    # semantic understanding (not just simple keywords)
+    order_patterns = [
+        "where is my order", "track", "delivery", "shipped",
+        "order status", "package", "when will i get"
+    ]
 
-        response = client.models.generate_content(
-            model="gemini-2.0-flash",
-            contents=prompt
-        )
+    refund_patterns = [
+        "refund", "return", "money back",
+        "cancel order", "replacement", "wrong item"
+    ]
 
-        return response.text.strip().lower()
+    # intent detection
+    if any(p in q for p in order_patterns):
+        return "order"
 
-    except Exception as e:
-        print("⚠️ Gemini failed, using fallback:", e)
+    elif any(p in q for p in refund_patterns):
+        return "refund"
 
-        q = query.lower()
-        if "order" in q or "track" in q:
-            return "order"
-        elif "refund" in q or "return" in q:
-            return "refund"
-        else:
-            return "faq"
+    else:
+        return "faq"
