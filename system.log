@@ -224,3 +224,16 @@
 2026-04-21 15:52:38,419 - INFO - Query: where is my order?
 2026-04-21 15:52:38,420 - INFO - Detected intent: order
 2026-04-21 15:52:38,420 - INFO - Routed to Order Agent
+2026-04-21 16:32:59,981 - INFO - Query: Where is my order?
+2026-04-21 16:32:59,981 - INFO - Detected intent: order
+2026-04-21 16:33:00,005 - INFO - Routed to Order Agent
+2026-04-21 20:22:43,219 - INFO - Query: when i will get my refund?
+2026-04-21 20:22:43,220 - INFO - Intent: faq
+2026-04-21 20:23:12,096 - INFO - Query: when is refund?
+2026-04-21 20:23:12,097 - INFO - Intent: faq
+2026-04-21 20:24:00,298 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli?expand=inferenceProviderMapping "HTTP/1.1 200 OK"
+2026-04-21 20:24:05,073 - INFO - HTTP Request: GET https://huggingface.co/api/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-04-21 20:24:28,787 - INFO - HTTP Request: POST https://router.huggingface.co/hf-inference/models/facebook/bart-large-mnli "HTTP/1.1 200 OK"
+2026-04-21 20:24:28,788 - INFO - Query: i want refund
+2026-04-21 20:24:28,789 - INFO - Intent: refund
+2026-04-21 20:24:28,812 - INFO - Guardrail triggered: refund limit exceeded

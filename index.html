@@ -1,89 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Agentic AI Chat</title>
-    <style>
-        body {
-            font-family: Arial;
-            background: #0f172a;
-            color: white;
-            text-align: center;
-        }
+<title>Agentic AI Support</title>
+<style>
+body {
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+}
 
-        .chat-box {
-            width: 400px;
-            margin: auto;
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 10px;
-        }
+.container {
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+}
 
-        input {
-            width: 70%;
-            padding: 10px;
-        }
+.chat {
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
 
-        button {
-            padding: 10px;
-            background: #38bdf8;
-            border: none;
-            cursor: pointer;
-        }
+.user { color: #38bdf8; }
+.bot { color: #22c55e; }
 
-        .msg {
-            text-align: left;
-            margin: 10px;
-        }
+input {
+    width: 70%;
+    padding: 10px;
+}
 
-        .user {
-            color: #38bdf8;
-        }
-
-        .bot {
-            color: #22c55e;
-        }
-    </style>
+button {
+    padding: 10px;
+    background: #38bdf8;
+    border: none;
+}
+</style>
 </head>
 
 <body>
 
-<h2>🤖 Agentic AI Support</h2>
+<div class="container">
+    <h2>🤖 AI Support Assistant</h2>
+    <div id="chat" class="chat"></div>
 
-<div class="chat-box">
-    <div id="chat"></div>
-
-    <input id="query" placeholder="Ask something..." />
+    <input id="query" placeholder="Ask your query..." />
     <button onclick="sendQuery()">Send</button>
 </div>
 
 <script>
 async function sendQuery() {
     let query = document.getElementById("query").value;
-
-    // show user message
     let chat = document.getElementById("chat");
-    chat.innerHTML += `<div class='msg user'>👤 ${query}</div>`;
 
-    try {
-        const res = await fetch("http://127.0.0.1:8000/query", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                user_query: query   // ✅ IMPORTANT FIX
-            })
-        });
+    chat.innerHTML += `<div class='user'>👤 ${query}</div>`;
 
-        const data = await res.json();
+    const res = await fetch("http://127.0.0.1:8000/query", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({ user_query: query })
+    });
 
-        // show bot response
-        chat.innerHTML += `<div class='msg bot'>🤖 ${data.response}</div>`;
+    const data = await res.json();
 
-    } catch (error) {
-        chat.innerHTML += `<div class='msg bot'>❌ Error connecting to server</div>`;
-        console.error(error);
-    }
+    chat.innerHTML += `<div class='bot'>🤖 ${data.response}</div>`;
 }
 </script>
 

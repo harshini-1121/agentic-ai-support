@@ -1,39 +1,32 @@
+from huggingface_hub import InferenceClient
 import os
 from dotenv import load_dotenv
-from openai import OpenAI
 
 load_dotenv()
 
-client = OpenAI(
-    api_key=os.getenv("GROK_API_KEY"),
-    base_url="https://api.x.ai/v1"
-)
+client = InferenceClient(token=os.getenv("HF_API_KEY"))
+
+LABELS = ["order", "refund", "faq"]
 
 def classify_query_llm(query: str):
-    """
-    Simulates LLM-based intent classification using semantic patterns.
-    Acts as a fallback when real LLM APIs are unavailable.
-    """
+    try:
+        result = client.zero_shot_classification(
+            query,
+            candidate_labels=LABELS,
+            model="facebook/bart-large-mnli"
+        )
 
-    q = query.lower()
+        # Case 1: dict with labels
+        if isinstance(result, dict) and "labels" in result:
+            return result["labels"][0]
 
-    # semantic understanding (not just simple keywords)
-    order_patterns = [
-        "where is my order", "track", "delivery", "shipped",
-        "order status", "package", "when will i get"
-    ]
+        # Case 2: list of label-score dicts
+        elif isinstance(result, list):
+            return result[0]["label"]
 
-    refund_patterns = [
-        "refund", "return", "money back",
-        "cancel order", "replacement", "wrong item"
-    ]
+        else:
+            return "faq"
 
-    # intent detection
-    if any(p in q for p in order_patterns):
-        return "order"
-
-    elif any(p in q for p in refund_patterns):
-        return "refund"
-
-    else:
+    except Exception as e:
+        print("⚠️ HF failed:", e)
         return "faq"
